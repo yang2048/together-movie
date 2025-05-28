@@ -1,0 +1,61 @@
+{
+  "name": "together-movie",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
+    "lint:eslint": "eslint . --fix",
+    "lint": "run-s lint:*"
+  },
+  "dependencies": {
+    "artplayer": "^5.2.3",
+    "flowbite": "^3.1.2",
+    "hls.js": "^1.6.2",
+    "notivue": "^2.4.5",
+    "pinia": "^3.0.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@ameinhardt/unocss-preset-daisy": "^1.1.7",
+    "@antfu/eslint-config": "^4.13.2",
+    "@iconify/json": "^2.2.340",
+    "@mediapipe/selfie_segmentation": "^0.1.1675465747",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.14.0",
+    "@unocss/eslint-plugin": "^66.1.2",
+    "@unocss/reset": "^66.1.2",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vitejs/plugin-vue-jsx": "^4.1.2",
+    "@vue/tsconfig": "^0.7.0",
+    "@vueuse/core": "^13.2.0",
+    "artplayer-plugin-ambilight": "^1.0.0",
+    "artplayer-plugin-danmuku": "^5.1.6",
+    "artplayer-plugin-hls-control": "^1.0.1",
+    "dayjs": "^1.11.13",
+    "es-toolkit": "^1.38.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-format": "^1.0.1",
+    "eslint-plugin-oxlint": "^0.16.0",
+    "jiti": "^2.4.2",
+    "npm-run-all2": "^7.0.2",
+    "oxlint": "^0.16.0",
+    "sass-embedded": "^1.89.0",
+    "typescript": "~5.8.0",
+    "unocss": "^66.1.2",
+    "unplugin-auto-import": "^19.2.0",
+    "unplugin-vue-components": "^28.5.0",
+    "vite": "^6.2.4",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.8"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
