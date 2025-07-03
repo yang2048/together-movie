@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Artplayer from 'artplayer'
-import artplayerPluginAmbilight from 'artplayer-plugin-ambilight'
+// import artplayerPluginAmbilight from 'artplayer-plugin-ambilight'
 import artplayerPluginDanmuku from 'artplayer-plugin-danmuku'
 // import artplayerPluginDanmukuMask from 'artplayer-plugin-danmuku-mask'
 import artplayerPluginHlsControl from 'artplayer-plugin-hls-control'

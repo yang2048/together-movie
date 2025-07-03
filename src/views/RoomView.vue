@@ -12,7 +12,7 @@ const roomNo = route.params.roomNo
 const roomPd = route.query.roomPd
 const p = route.query.p
 const option = {
-  url: p || 'https://mzm3u8.vip/20250526/QO5sVBMQ/index.m3u8',
+  url: p?.toString() || 'https://img.tukuppt.com/video_show/14490244/00/12/95/5dde9ceb470d1.mp4',
 }
 // 定义 Artplayer 实例
 let art: Artplayer | null = null
